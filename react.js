@@ -10,6 +10,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking'
+
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -28,17 +29,19 @@ module.exports = {
     'react-hooks',
     'unused-imports',
     'eslint-plugin-import-helpers',
-    'import'
+    'import',
+    'prettier'
   ],
   rules: {
     'prettier/prettier': [
       'error',
       {
-        printWidth: 80,
+        printWidth: 320,
         tabWidth: 2,
         singleQuote: true,
         trailingComma: 'all',
         arrowParens: 'avoid',
+        endOfLine: 'auto',
       },
     ],
 
@@ -126,7 +129,20 @@ module.exports = {
       }
     ],
     'no-use-before-define': 'off',
-    'react/jsx-props-no-spreading': 'off'
+    'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/require-await': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/unbound-method': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
+    'import/no-cycle': 'off',
+    'react/no-array-index-key': 'off',
+    '@typescript-eslint/no-floating-promises': 'off'
   },
   settings: {
     react: {

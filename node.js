@@ -4,7 +4,7 @@ module.exports = {
     node: true
   },
   extends: [
-    'airbnb',
+    'airbnb-base',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',

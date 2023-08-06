@@ -37,15 +37,14 @@ module.exports = {
       'error',
       {
         printWidth: 320,
+        semi: true,
         tabWidth: 2,
         singleQuote: true,
         trailingComma: 'all',
         arrowParens: 'avoid',
-        endOfLine: 'auto',
+        useTabs: false,
       },
     ],
-
-
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'jsx-a11y/alt-text': [

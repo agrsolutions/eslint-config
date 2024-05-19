@@ -28,3 +28,45 @@ yarn add -D eslint @agsolutions/eslint-config
 ```
 
 > You can also use a `.eslintrc.js` instead of JSON if you prefer.
+
+### React (with Next.js)
+
+Install dependencies:
+```
+npm i -D eslint @agsolutions/eslint-config
+```
+Inside `.eslintrc.json`
+```
+{
+  "extends": [
+    "@agsolutions/eslint-config/next", 
+    "next/core-web-vitals"
+  ]
+}
+```
+
+### React (without Next.js)
+
+Install dependencies:
+```
+npm i -D eslint @agsolutions/eslint-config
+```
+Inside `.eslintrc.json`
+```
+{
+  "extends": "@agsolutions/eslint-config/react"
+}
+```
+
+### Node.js
+
+Install dependencies:
+```
+npm i -D eslint @agsolutions/eslint-config
+```
+Inside `.eslintrc.json`
+```
+{
+  "extends": "@agsolutions/eslint-config/node"
+}
+```

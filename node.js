@@ -4,7 +4,7 @@ module.exports = {
     node: true
   },
   extends: [
-    'airbnb-base',
+    'eslint-config-airbnb-extended',
     'plugin:prettier/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:@typescript-eslint/recommended'
@@ -16,8 +16,6 @@ module.exports = {
   },
   plugins: [
     '@typescript-eslint',
-    'unused-imports',
-    'eslint-plugin-import-helpers',
     'import'
   ],
   rules: {
@@ -60,43 +58,11 @@ module.exports = {
         'caughtErrorsIgnorePattern': '^_'
       }
     ],
-    'unused-imports/no-unused-imports-ts': 'error',
-    'import/no-duplicates': 'off',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      {
-        'vars': 'all',
-        'varsIgnorePattern': '^_',
-        'args': 'after-used',
-        'argsIgnorePattern': '^_'
-      }
-    ],
     'import/extensions': [
       'error',
       'ignorePackages',
       {
         'ts': 'never'
-      }
-    ],
-    'import-helpers/order-imports': [
-      'warn',
-      {
-        'newlinesBetween': 'always',
-        'groups': [
-          'module',
-          '/^@config/',
-          '/^@shared/',
-          '/^@modules/',
-          [
-            'parent',
-            'sibling'
-          ],
-          'index'
-        ],
-        'alphabetize': {
-          'order': 'asc',
-          'ignoreCase': true
-        }
       }
     ],
     'import/no-unresolved': 'error',
@@ -137,3 +103,4 @@ module.exports = {
     }
   },
 }
+

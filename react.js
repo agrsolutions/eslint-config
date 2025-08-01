@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'airbnb',
+    'eslint-config-airbnb-extended',
     'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -25,8 +25,6 @@ module.exports = {
     'jsx-a11y',
     '@typescript-eslint',
     'react-hooks',
-    'unused-imports',
-    'eslint-plugin-import-helpers',
     'import',
     'prettier'
   ],
@@ -93,17 +91,7 @@ module.exports = {
     'no-nested-ternary': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-static-element-interactions': 'off',
-    'unused-imports/no-unused-imports-ts': 'error',
     'import/no-duplicates': 'off',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      {
-        'vars': 'all',
-        'varsIgnorePattern': '^_',
-        'args': 'after-used',
-        'argsIgnorePattern': '^_'
-      }
-    ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-filename-extension': [
@@ -153,3 +141,4 @@ module.exports = {
     }
   }
 }
+
